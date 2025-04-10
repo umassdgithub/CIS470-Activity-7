@@ -66,7 +66,7 @@ Find the mutants that survived the mutation testing.
 
 
 
-<span style='background-color:yellow'>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js` file).</span>
+<mark>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js` file).</mark>
 
 
 - the equality and inequality related test cases
