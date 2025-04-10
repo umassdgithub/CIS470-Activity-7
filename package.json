@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@stryker-mutator/jest-runner": "^8.2.6"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+    "scripts": {
+    "test": "rm -rf .stryker-tmp/* && jest", 
+    "reset": "jest --clearCache",
+    "mutation": "rm -rf .stryker-tmp/* && stryker run --reporters html"
+  }
+}
