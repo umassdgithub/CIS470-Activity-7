@@ -25,6 +25,12 @@ To install the project dependencies, run:
 npm install
 ```
 
+You should now be able to run the example codes using:
+
+```bash
+node main.js
+```
+
 ## 3. Run the unit tests
 
 To run the unit test (Jest), use: 

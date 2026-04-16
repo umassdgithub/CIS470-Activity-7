@@ -1,5 +1,5 @@
-const calculateBMI = require('./bmi.js');
-const gradeToLetter = require('./gradeToLetter.js');
+const calculateBMI = require('./src/bmi.js');
+const gradeToLetter = require('./src/gradeToLetter.js');
 // Usage example
 const weightInPounds = 150;
 const heightInFeet = 5;
