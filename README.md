@@ -73,7 +73,14 @@ Review the test cases in `gradeToLetter.test.js`.
 
    - Observe which scenarios are currently being tested. 
    - Identify what inputs are covered and what might be missing.
-   - Add at least three new test cases for each test file.
+   - Add at least five new test cases for each test file.
+
+<mark>Based on the surviving mutations, add new test cases --- at least 5 --- (in `gradeToLetter.test.js`).</mark>
+
+- 3 the equality and inequality related test cases
+- 1 return of errors based on wrong input
+- 1 uncovered condition
+
 
 ### Exercise step 3. Run test
 
@@ -119,19 +126,14 @@ Open the report in the browser:
 
 Find the mutants that survived the mutation testing.
 
-<mark>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js`).</mark>
 
 
-- the equality and inequality related test cases
-- return of errors based on wrong input
-- any uncovered condition
-
-### Exercise step 5: Redo the tests
+### Exercise step 6: Redo the tests
 
 Run the previous commands to execute the tests again. Check if there are any other mutants that survived the mutation testing.
 
 # Deliverable Checklist
 
 - The new gradeToLetter.test.js file with new test cases. (25 Points)
-- Write an explanation of what you did, include screenshots if needed and explain your findings. (25 Points)
+- Write an explanation -- few lines -- of what you did, include screenshots if needed and explain your findings. (25 Points)
 - The new Stryker report mutation.html file. (50 Points)
