@@ -2,35 +2,80 @@
 
 ## Using Stryker to generate mutants and test them
 
-In this example, 2 basic JS functions are tested using the Jest unit testing library.
+In this example, a basic JS functions are tested using the Jest unit testing library.
+**The test files contain less the required number of test cases.**
 
-- **bmi.js:** which calculates the BMI by pounds, feet and inches
+- **gradeToLetter.js**: Returns the corresponding letter for a grade. This function is made based on the requirements: [grade to letter requirements](./README-gradeToLetter.MD)
 
-- **gradeToLetter.js**: Returns the corresponding letter for a grade.
+- Do not modify the bmi.js and bmi.test.js code (They are only there as examples)
 
 The steps to run
 
 - install nodejs (you can use [codesandbox](https://codesandbox.io/) or [codespaces](https://github.com/features/codespaces) as well)
-- [Getting Started](https://stryker-mutator.io/docs/stryker-js/getting-started/) ```npm install -g stryker```
-- to install the dependencies, run: ```npm install```
-- to run the unit test (Jest), use: ```npm test```
-- to run the mutation generate using stryker and Jest : ```npx stryker run --reporters html```
+# Getting Started
+
+## 1. Install Node.js
+Install Node.js on your machine.  
+You may also use GitHub Codespaces or CodeSandbox.
+
+## 2. Install project dependencies
+To install the project dependencies, run:
+
+```bash
+npm install
+```
+
+## 3. Run the unit tests
+
+To run the unit test (Jest), use: 
+
+```bash
+npm test
+```
+## 4. Run mutation testing
+
+To run the mutation generate using stryker and Jest : 
+
+```bash
+npx stryker run --reporters html
+```
+
+## 5. Get the report
 
 The last line generates an HTML file with the name of repoerters/mutation.html which contains the test results for the coverage and also Mutants.
+If you are running the tests locally you should be able to see the results in the html file. If you are on codespaces, you will need to install "Live Server" plugin and use it to open the HTML file.
+
+
+
 
 ## Exercise
 
-### Getting to know the artifact
+Getting to Know the Artifact
 
-Review the code provided for `gradeToLetter.js` and the  provided `gradeToLetter.test.js` to test the functionality of the function.
+In this exercise, you will analyze an existing function and its corresponding test suite.
 
-**You can refer to the `bmi.js` and `bmi.test.js` for test case examples.**
+### Exercise step 1. Review requirements
 
-### Run the tests
+Review the implementation in `gradeToLetter.js` and its `Requirements` in the related Readme file: 
 
-Run the following command:
+[README-gradeToLetter.MD](./README-gradeToLetter.MD) for the gradeToLetter.js implementation.
 
-To run all the tests: ```npm test``` 
+
+### Exercise step 2: Add new test cases 
+
+Review the test cases in `gradeToLetter.test.js`.
+
+   - Observe which scenarios are currently being tested. 
+   - Identify what inputs are covered and what might be missing.
+   - Add at least three new test cases for each test file.
+
+### Exercise step 3. Run test
+
+Run the existing tests:
+  
+   ```bash
+   npm test
+   ```
 
 I have already added required script runs inside the `package.json` file.
 
@@ -42,15 +87,21 @@ I have already added required script runs inside the `package.json` file.
   }
 ```
 
-#### Generate mutants
+**Note that if you are on Windows the `rm` function will not run and result in errors.**
 
-Run the following command:
+### Exercise step 4: Generate mutants and review report
 
-```npx stryker run --reporters html```
+#### Run the following command:
+
+```bash
+npx stryker run --reporters html
+```
 
 or
 
-```npm run mutation```
+```bash 
+npm run mutation
+```
 
 #### Open the report
 
@@ -58,26 +109,23 @@ Open the report in the browser:
 
 ```open reports/mutation/mutation.html```
 
-#### Find Survivors
+### Exercise step 5: Find Survivors and Improve test cases
 
 Find the mutants that survived the mutation testing.
 
-#### Use the report to improve the tests
-
-
-
-<mark>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js` file).</mark>
+<mark>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js` and `bmi.test.js`).</mark>
 
 
 - the equality and inequality related test cases
 - return of errors based on wrong input
 - any uncovered condition
 
-#### Redo the tests
+### Exercise step 5: Redo the tests
 
 Run the previous commands to execute the tests again. Check if there are any other mutants that survived the mutation testing.
 
-#### Deliverable Checklist
+# Deliverable Checklist
 
-- [ ] The new gradeToLetter.test.js file with new test cases. (50 Points)
-- [ ] The new Stryker report mutation.html file. (50 Points)
+- The new gradeToLetter.test.js file with new test cases. (25 Points)
+- Write an explanation of what you did, include screenshots if needed and explain your findings. (25 Points)
+- The new Stryker report mutation.html file. (50 Points)

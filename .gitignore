@@ -3,3 +3,5 @@ reports/.DS_Store
 reports/mutation/mutation.html
 reports/mutation/mutation.html
 reports
+# stryker temp files
+.stryker-tmp
