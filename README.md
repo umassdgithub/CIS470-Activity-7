@@ -119,7 +119,7 @@ Open the report in the browser:
 
 Find the mutants that survived the mutation testing.
 
-<mark>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js` and `bmi.test.js`).</mark>
+<mark>Based on the surviving mutations, add new test cases (in `gradeToLetter.test.js`).</mark>
 
 
 - the equality and inequality related test cases
